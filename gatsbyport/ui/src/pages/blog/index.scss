@@ -1,0 +1,29 @@
+@import '../../layouts/sass/main.scss';
+
+.blog-preview{
+  border-bottom: solid (_size(border-width) * 1.5) _palette(border);
+  article {
+    margin: 2em 0em 0em 0em;
+
+    h3 {
+      margin: 0 0 0.25em 0;
+      color: #0093BF;
+    }
+
+    h4 {
+      margin: 0 0 0.5em 0;
+    }
+
+    p {
+      font-size: 1.20em;
+      line-height: 1.5;
+      margin-bottom: 1em;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+

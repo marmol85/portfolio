@@ -1,0 +1,15 @@
+{
+  "name": "api-danielhollcraft",
+  "version": "0.0.1",
+  "description": "The api for danielhollcraft.com",
+  "author": "Daniel Hollcraft",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sls offline"
+  },
+  "dependencies": {
+    "ajv": "^5.1.5",
+    "mailgun-js": "^0.11.2",
+    "serverless-offline": "^3.14.1"
+  }
+}
