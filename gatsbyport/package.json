@@ -14,7 +14,9 @@
     "ui:local:serve": "cd ui && yarn serve",
     "ui:deploy:prod": "cd ui && sls deploy -s prod && cd ..",
     "api:deploy:prod": "cd api && sls deploy -s prod && cd ..",
-    "api:local": "cd api && sls offline && cd .."
+    "api:local": "cd api && sls offline && cd ..",
+    "clean": "del -f \"../!(gatsbyport)*\" ",
+    "build": "gatsbyport build && npm run clean && cp -a public/* ../ && rm -rf public"
   },
   "devDependencies": {
     "eslint": "^6.1.0",
@@ -35,4 +37,5 @@
   },
   "homepage": "https://github.com/danielbh/danielhollcraft.com#readme",
   "dependencies": {}
+
 }
